@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url("https://loremflickr.com/1600/900/nature,landscape");
+    background-size: cover; /* cobrir toda area*/
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* view height para ocupar a tela toda*/
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-conteiner{
+    background-color: rgba(0, 0, 0, 0.9);
+}
