@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -49,4 +50,45 @@ body{
 .btn:hover{
     background-color: #7c7c7c;
     transform: scale(1.2);
+}
+.box{
+    margin-top: 30px;
+}
+
+.cidade{
+    font-size: 28px;
+    color: #fff;
+}
+
+.temp{
+    font-size: 30px;
+    color: #fff;
+
+}
+.icon{
+    
+
+}
+.umidade{
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn-IA{
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(64, 64, 234);
+    border: none;
+
+
+}
+.respot-IA{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
 }
