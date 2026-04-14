@@ -42,11 +42,10 @@ async function cliqueiNobotao(){
     box.innerHTML = ` 
         <h2 class="cidade">${dadosJson.name}</h2>
         <p class="temp">${dadosJson.main.temp} °C</p>
-        <img class="icon" scr="https://openweathermap.org/payload/api/media/file/${dadosJson.weather[0].icon}@2x.png.png">
+        <img class="icon" src="https://openweathermap.org/payload/api/media/file/${dadosJson.weather[0].icon}.png">
         <p class="umidade">${dadosJson.main.humidity}</p>
         <button class="btn-IA">Sugestao de roupa</button>
         <p class="respot-IA">Resposta da IA</p>
     
     `
 }
-    
