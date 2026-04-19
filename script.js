@@ -39,13 +39,26 @@ async function cliqueiNobotao(){
     let RespostaServidor = await fetch(endereco)
     let dadosJson = await RespostaServidor.json()
     console.log (dadosJson)
+
+    // math.floor() *Arrendondar pra baixo
     box.innerHTML = ` 
         <h2 class="cidade">${dadosJson.name}</h2>
-        <p class="temp">${dadosJson.main.temp} °C</p>
+        <p class="temp">${Math.floor(dadosJson.main.temp)} °C</p>
         <img class="icon" src="https://openweathermap.org/payload/api/media/file/${dadosJson.weather[0].icon}.png">
-        <p class="umidade">${dadosJson.main.humidity}</p>
+        <p class="umidade">Umidade: ${dadosJson.main.humidity}%</p>
         <button class="btn-IA">Sugestao de roupa</button>
-        <p class="respot-IA">Resposta da IA</p>
+        <p class="respot-IA"></p>
     
     `
+}
+
+function detectavoz(){
+    
+    let reconhecimeto = new window.webkitSpeechRecongition()
+    reconhecimeto.lang = "pt-BR"
+    reconhecimeto.start()
+
+    reconhecimeto.onresult = function (evento){
+        console.log(evento)
+    }
 }

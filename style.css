@@ -83,12 +83,20 @@ body{
     color: #fff;
     background-color: rgb(64, 64, 234);
     border: none;
+    cursor: pointer;
 
 
 }
+.btn-IA:active{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+}
+
 .respot-IA{
     color: #fff;
     margin-top: 15px;
     font-size: 14px;
     line-height: 1.5;
 }
+
