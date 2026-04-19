@@ -54,11 +54,15 @@ async function cliqueiNobotao(){
 
 function detectavoz(){
     
-    let reconhecimeto = new window.webkitSpeechRecongition()
+    let reconhecimeto = new window.webkitSpeechRecognition()
     reconhecimeto.lang = "pt-BR"
     reconhecimeto.start()
 
     reconhecimeto.onresult = function (evento){
-        console.log(evento)
+        let texto = evento.results[0][0].transcript;
+
+        document.querySelector(".input-city").value = texto
+        cliqueiNobotao()
     }
+
 }
